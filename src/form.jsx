@@ -16,7 +16,7 @@ export const Form = ({ onBookAdded }) => {
         };
 
         // POST the new book to the backend
-        fetch('http://localhost:9090/addBook', {
+        fetch('http://13.49.231.43:9090/addBook', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export const Form = ({ onBookAdded }) => {
 
     return (
         <div className="auth-form-container">
-            <h2>Add a New Book</h2>
+            <h2>ADD NEW BOOK</h2>
             <form className="Form-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="book-name">Book Name</label>
